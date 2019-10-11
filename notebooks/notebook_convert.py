@@ -107,6 +107,31 @@ def remove_output_stderr(soup):
     for div in soup.find_all('div', {'class':'output_stderr'}):
         div.decompose()
 
+def remove_input_prompt(soup):
+    """
+    Remove the `input_prompt` elements from the notebook outputs.
+
+    Args:
+        soup (BeautifulSoup): HTML parsed notebook.
+
+    Effect:
+        Changes soup object to have divs with class `output_stderr` removed.
+    """
+    for div in soup.find_all('div', {'class':'prompt input_prompt'}):
+        div.decompose()
+
+def remove_output_prompt(soup):
+    """
+    Remove the `output_prompt` elements from the notebook outputs.
+
+    Args:
+        soup (BeautifulSoup): HTML parsed notebook.
+
+    Effect:
+        Changes soup object to have divs with class `output_stderr` removed.
+    """
+    for div in soup.find_all('div', {'class':'prompt output_prompt'}):
+        div.decompose()
 
 def add_table_class(soup):
     """
@@ -140,9 +165,9 @@ def add_jekyll_header(html_str, layout, title, description):
     """
     header = '\n'.join([
         '---',
-        'layout: {}'.format(layout),
         'title: {}'.format(title),
         'description: {}'.format(description),
+        'classes: wide',
         '---',
         ''
     ])
@@ -179,6 +204,8 @@ def main():
     title = remove_title(soup)
     print('title: {}'.format(title))
     remove_output_stderr(soup)
+    remove_input_prompt(soup)
+    remove_output_prompt(soup)
     add_table_class(soup)
     html_str = soup.prettify()
     print(args.layout)

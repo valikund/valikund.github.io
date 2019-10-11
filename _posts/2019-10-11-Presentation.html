@@ -1,12 +1,29 @@
 ---
 title: Vibration Reduction of Flexible Beam with Bayesian Input shaper
+description: None
+classes: wide
 ---
 
+<div class="cell border-box-sizing text_cell rendered">
+ <div class="inner_cell">
+  <div class="text_cell_render border-box-sizing rendered_html">
+   <h2 id="Zsolt-Pásztori">
+    Zsolt Pásztori
+    <a class="anchor-link" href="#Zsolt-Pásztori">
+     ¶
+    </a>
+   </h2>
+   <h2 id="CERN/-SMM-MRO-Robotics">
+    CERN/ SMM-MRO-Robotics
+    <a class="anchor-link" href="#CERN/-SMM-MRO-Robotics">
+     ¶
+    </a>
+   </h2>
+  </div>
+ </div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [1]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -37,28 +54,6 @@ title: Vibration Reduction of Flexible Beam with Bayesian Input shaper
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
- <div class="inner_cell">
-  <div class="text_cell_render border-box-sizing rendered_html">
-   <h2 id="Zsolt-Pásztori">
-    Zsolt Pásztori
-    <a class="anchor-link" href="#Zsolt-Pásztori">
-     ¶
-    </a>
-   </h2>
-   <h2 id="CERN/-SMM-MRO-Robotics">
-    CERN/ SMM-MRO-Robotics
-    <a class="anchor-link" href="#CERN/-SMM-MRO-Robotics">
-     ¶
-    </a>
-   </h2>
-  </div>
- </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <h2 id="Introduction">
@@ -86,7 +81,7 @@ The robot has to fit 2 main criteria:
     </br>
    </p>
    <p>
-    <img src="cernbot_small.jpg"/>
+    <img alt="" src="cernbot_small.jpg"/>
    </p>
    <p>
     The beam has a low weight so it can be moved quickly.
@@ -103,9 +98,6 @@ It dies down very quickly when it is moving with constant velocity tough.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [2]:
-  </div>
   <div class="inner_cell">
    <div class="input_area">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -124,9 +116,6 @@ It dies down very quickly when it is moving with constant velocity tough.
     </div>
    </div>
    <div class="output_area">
-    <div class="prompt output_prompt">
-     Out[2]:
-    </div>
     <div class="output_html rendered_html output_subarea output_execute_result">
      <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="500" src="https://www.youtube.com/embed/1AbahaqgWqU" width="300">
      </iframe>
@@ -136,8 +125,6 @@ It dies down very quickly when it is moving with constant velocity tough.
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <h2 id="Brain-Storming-of-Solutions">
@@ -286,8 +273,6 @@ It dies down very quickly when it is moving with constant velocity tough.
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <h2 id="Experiment-Set-UP">
@@ -339,9 +324,6 @@ I manually retuned them, to have a better performance.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [3]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -396,8 +378,6 @@ I manually retuned them, to have a better performance.
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
@@ -418,8 +398,6 @@ This data can quickly be plotted with Matplotlib in the notebook.
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <h2 id="Input-shaping">
@@ -463,9 +441,6 @@ y_{o}(t) &amp; = \left[ \frac{A_{0} \omega}{\sqrt{1 - \xi^2}} e^{-\xi \omega \le
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [4]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -512,8 +487,6 @@ y_{o}(t) &amp; = \left[ \frac{A_{0} \omega}{\sqrt{1 - \xi^2}} e^{-\xi \omega \le
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
@@ -527,9 +500,6 @@ y_{\sum} \left( t \right) &amp; = \sum_{i=1}^{n}\left[ \frac{A_{0} \omega}{\sqrt
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [5]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -577,9 +547,6 @@ y_{\sum} \left( t \right) &amp; = \sum_{i=1}^{n}\left[ \frac{A_{0} \omega}{\sqrt
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [6]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -626,8 +593,6 @@ y_{\sum} \left( t \right) &amp; = \sum_{i=1}^{n}\left[ \frac{A_{0} \omega}{\sqrt
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
@@ -679,9 +644,6 @@ Then fitted the second order harmonic scillator equation to the beam velocity da
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [7]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -732,9 +694,6 @@ Then fitted the second order harmonic scillator equation to the beam velocity da
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [8]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -771,8 +730,6 @@ The second impulse is at : 0.858 msec
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
@@ -786,8 +743,6 @@ In my case since I was working with a heavy mobile robot, which has 4 motors I w
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <h1 id="Cost-Functions">
@@ -800,8 +755,6 @@ In my case since I was working with a heavy mobile robot, which has 4 motors I w
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
@@ -843,9 +796,6 @@ It is important to get rido of this, otherwise the loss function will be very no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [9]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -886,8 +836,6 @@ It is important to get rido of this, otherwise the loss function will be very no
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
@@ -902,9 +850,6 @@ There are 3 peaks in the signal. From the previous experiment it can be seen tha
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [10]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -948,9 +893,6 @@ There are 3 peaks in the signal. From the previous experiment it can be seen tha
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [11]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -1000,8 +942,6 @@ There are 3 peaks in the signal. From the previous experiment it can be seen tha
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <h1 id="Bayesian-Optimization">
@@ -1014,8 +954,6 @@ There are 3 peaks in the signal. From the previous experiment it can be seen tha
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
@@ -1055,8 +993,6 @@ It does not need the gradients of the loss function. Works with relatively small
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
@@ -1079,9 +1015,6 @@ It does not need the gradients of the loss function. Works with relatively small
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [12]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -1144,8 +1077,6 @@ It does not need the gradients of the loss function. Works with relatively small
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
@@ -1171,8 +1102,6 @@ Acquisition function is responsible to suggesting the new location.
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <h1 id="Experiments">
@@ -1185,8 +1114,6 @@ Acquisition function is responsible to suggesting the new location.
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
@@ -1213,9 +1140,6 @@ To make each execution as similar as possible, I did one run forward and one bac
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [13]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -1298,9 +1222,6 @@ To make each execution as similar as possible, I did one run forward and one bac
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [14]:
-  </div>
   <div class="inner_cell">
    <div class="input_area">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -1317,9 +1238,6 @@ To make each execution as similar as possible, I did one run forward and one bac
  <div class="output_wrapper">
   <div class="output">
    <div class="output_area">
-    <div class="prompt output_prompt">
-     Out[14]:
-    </div>
     <div class="output_html rendered_html output_subarea output_execute_result">
      <video autoplay="" controls="" height="360" loop="" width="936">
       <source src="data:video/mp4;base64,AAAAHGZ0eXBNNFYgAAACAGlzb21pc28yYXZjMQAAAAhmcmVlAAJNRG1kYXQAAAKuBgX//6rcRem9
@@ -4000,8 +3918,6 @@ AAAAAQAAAABMYXZmNTguMjAuMTAw
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
@@ -4018,9 +3934,6 @@ AAAAAQAAAABMYXZmNTguMjAuMTAw
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [15]:
-  </div>
   <div class="inner_cell">
    <div class="input_area collapsed">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -4071,8 +3984,6 @@ AAAAAQAAAABMYXZmNTguMjAuMTAw
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
@@ -4084,9 +3995,6 @@ There is considerably less vibration in the video then during the original contr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
  <div class="input">
-  <div class="prompt input_prompt">
-   In [16]:
-  </div>
   <div class="inner_cell">
    <div class="input_area">
     <div class="collapse_expand_button fa fa-1x fa-minus-square-o">
@@ -4105,9 +4013,6 @@ There is considerably less vibration in the video then during the original contr
     </div>
    </div>
    <div class="output_area">
-    <div class="prompt output_prompt">
-     Out[16]:
-    </div>
     <div class="output_html rendered_html output_subarea output_execute_result">
      <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="500" src="https://www.youtube.com/embed/lYZm8Lcw7tc" width="300">
      </iframe>
@@ -4117,8 +4022,6 @@ There is considerably less vibration in the video then during the original contr
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <h1 id="Discussion">
@@ -4131,8 +4034,6 @@ There is considerably less vibration in the video then during the original contr
  </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
- <div class="prompt input_prompt">
- </div>
  <div class="inner_cell">
   <div class="text_cell_render border-box-sizing rendered_html">
    <p>
