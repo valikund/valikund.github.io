@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Zsolt Pasztori"
   avatar           : "/assets/images/profile_pick.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "The best way to understand how it works is to build it yourself. To learn"
+  bio              : "To understand how it works implement it yourself. To understand why it works just remove the bugs."
   location         : "Switzerland/Geneva"
   email            : "zspasztori@gmail.com"
   links:
