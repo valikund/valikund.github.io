@@ -1,12 +1,7 @@
 ---
-title: Presentation
+title: Vibration Reduction of Flexible Beam with Bayesian Input shaper
 classes: wide
 --- 
-# Vibration Reduction of Flexible Beam with Bayesian Input shaper
-
-## Zsolt Pásztori
-## CERN/ SMM-MRO-Robotics
-
 
 ```python
 #Imports
@@ -164,7 +159,7 @@ plt.show()
 ```
 
 
-![png](Presentation_files/Presentation_6_0.png)
+![png]({{ site.url }}{{ site.baseurl }}/assets/images/Presentation/Presentation_6_0.png)
 
 
 Above you can see the velocities of each motor before and after tuning the controllers. 
@@ -226,7 +221,7 @@ plt.show()
 ```
 
 
-![png](Presentation_files/Presentation_9_0.png)
+![png]({{ site.url }}{{ site.baseurl }}/assets/images/Presentation/Presentation_9_0.png)
 
 
 If we have several impulses we can sum the effects together, since the system is linear.
@@ -263,7 +258,7 @@ plt.show()
 ```
 
 
-![png](Presentation_files/Presentation_11_0.png)
+![png]({{ site.url }}{{ site.baseurl }}/assets/images/Presentation/Presentation_11_0.png)
 
 
 
@@ -292,7 +287,7 @@ plt.show()
 ```
 
 
-![png](Presentation_files/Presentation_12_0.png)
+![png]({{ site.url }}{{ site.baseurl }}/assets/images/Presentation/Presentation_12_0.png)
 
 
 As can be seen on the figure above the method gets rid of the oscillation in the ideal case.    
@@ -355,7 +350,7 @@ plt.show()
 ```
 
 
-![png](Presentation_files/Presentation_14_0.png)
+![png]({{ site.url }}{{ site.baseurl }}/assets/images/Presentation/Presentation_14_0.png)
 
 
 
@@ -426,7 +421,7 @@ plt.show()
 ```
 
 
-![png](Presentation_files/Presentation_19_0.png)
+![png]({{ site.url }}{{ site.baseurl }}/assets/images/Presentation/Presentation_19_0.png)
 
 
 To better see the noise spectrum I have also plotted the fast fourrier transformation (FFT) of the signal.
@@ -456,7 +451,7 @@ plt.show()
 ```
 
 
-![png](Presentation_files/Presentation_21_0.png)
+![png]({{ site.url }}{{ site.baseurl }}/assets/images/Presentation/Presentation_21_0.png)
 
 
 
@@ -488,7 +483,7 @@ plt.show()
 ```
 
 
-![png](Presentation_files/Presentation_22_0.png)
+![png]({{ site.url }}{{ site.baseurl }}/assets/images/Presentation/Presentation_22_0.png)
 
 
 # Bayesian Optimization
@@ -564,7 +559,7 @@ plt.show()
 ```
 
 
-![png](Presentation_files/Presentation_26_0.png)
+![png]({{ site.url }}{{ site.baseurl }}/assets/images/Presentation/Presentation_26_0.png)
 
 
 Based on the model of the loss at each iteration we need to pick a new set of parameters to probe.
@@ -3378,7 +3373,7 @@ plt.show()
 
 
 
-![png](Presentation_files/Presentation_33_1.png)
+![png]({{ site.url }}{{ site.baseurl }}/assets/images/Presentation/Presentation_33_1.png)
 
 
 On the video bellow the camera feed can be seen from the top of the beam. 
