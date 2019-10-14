@@ -3,6 +3,9 @@ title: Vibration Reduction of Flexible Beam with Bayesian Input shaper
 classes: wide
 --- 
 
+This is my first blog post. I have written it in Jupyter Notebook and converted it to Markdown.
+In the future I hope to change the image and video layouts of posts to fit better on screen. Also change code blocks to collapsibles.
+
 ```python
 #Imports
 from IPython.core.display import Image, display
@@ -667,7 +670,7 @@ HTML(anim.to_html5_video())
 
 
 
-<video width="936" height="360" controls autoplay loop>
+<video width="100" height="150" controls autoplay loop>
   <source type="video/mp4" src="data:video/mp4;base64,AAAAHGZ0eXBNNFYgAAACAGlzb21pc28yYXZjMQAAAAhmcmVlAAJNRG1kYXQAAAKuBgX//6rcRem9
 5tlIt5Ys2CDZI+7veDI2NCAtIGNvcmUgMTU1IHIyOTE3IDBhODRkOTggLSBILjI2NC9NUEVHLTQg
 QVZDIGNvZGVjIC0gQ29weWxlZnQgMjAwMy0yMDE4IC0gaHR0cDovL3d3dy52aWRlb2xhbi5vcmcv
@@ -3381,7 +3384,7 @@ There is considerably less vibration in the video then during the original contr
 
 
 ```python
-HTML('<iframe width="300" height="500" src="https://www.youtube.com/embed/lYZm8Lcw7tc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+HTML('<iframe width="100" height="150" src="https://www.youtube.com/embed/lYZm8Lcw7tc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
 ```
 
     /home/robotronics/.local/lib/python3.5/site-packages/IPython/core/display.py:694: UserWarning: Consider using IPython.display.IFrame instead
